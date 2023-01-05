@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Desenhe</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>   
+    <p style="color:white;margin:0px 0px 25px;font-family:'Patrick Hand',cursive ;line-height:20px;font-size:45px">
+        Vamos Desenhar?
+    </p>
+    <canvas id="canvas"></canvas>
+    <br>
+    <button style="background:rgb(201, 47, 244)" onclick="Desfazer()">Desfazer</button>
+    <button style="background:rgb(14, 203, 200)" onclick="Limpar()">Limpar</button>
+    <br>
+    <div onclick="strokeCOLOR(this)" style="background:rgb(248, 114, 4)" class="strokeColor"></div>
+    <div onclick="strokeCOLOR(this)" style="background:rgb(10, 8, 135)" class="strokeColor"></div>
+    <div onclick="strokeCOLOR(this)" style="background:rgb(241, 4, 4)" class="strokeColor"></div>
+    <div onclick="strokeCOLOR(this)" style="background:rgb(72, 3, 70)" class="strokeColor"></div>
+    <div onclick="strokeCOLOR(this)" style="background:rgb(219, 13, 160)" class="strokeColor"></div>
+    <div onclick="strokeCOLOR(this)" style="background:rgb(64, 230, 9)" class="strokeColor"></div>
+    <div onclick="strokeCOLOR(this)" style="background:rgb(73, 32, 3)" class="strokeColor"></div>
+    <div onclick="strokeCOLOR(this)" style="background:gold" class="strokeColor"></div>
+    <div onclick="strokeCOLOR(this)" style="background:black" class="strokeColor"></div>
+    <input type="color" oninput="strokeColor = this.value" style="height:35px" placeholder=" Outras Cores">
+    </div>
+    <br>
+    <div onclick="strokeWIDTH(this)" class="strokeWidth">1</div>
+    <div onclick="strokeWIDTH(this)" class="strokeWidth">2</div>
+    <div onclick="strokeWIDTH(this)" class="strokeWidth">5</div>
+    <div onclick="strokeWIDTH(this)" class="strokeWidth">10</div>
+    <input type="range" min="1" max="100" oninput="strokeWidth =this.value">
+    <script src='main.js'></script>
+</body>
+</html>

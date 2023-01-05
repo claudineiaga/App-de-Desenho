@@ -1,0 +1,49 @@
+canvas {
+    margin: 0px;
+    box-sizing: border-box;
+    box-shadow:5px 5px 3px black;
+    border-radius: 12px;
+    width: 90%;
+    height: 320px;
+}
+  
+body {
+    margin: 0;
+    padding: 30px;
+    background:#3c3c3a;
+    color:white;
+    font-family:'Patrick Hand',cursive ;
+}
+  
+button,a {
+    background: rgb(240, 240, 240);
+    padding: 10px;
+    font-family:'Patrick Hand',cursive ;
+    font-size: 16px;
+    margin: 12px 5px;
+    border:0;
+    color:white;
+    border-radius:10%;
+    cursor: pointer;
+}
+  
+.strokeColor, .strokeWidth{
+    padding:4px 0px;
+    border:2px solid white;
+    min-width:40px;
+    min-height:40px;
+    border-radius:100%;
+    cursor: pointer;
+    margin:5px 3px;
+    display:inline-block;
+    vertical-align:middle;
+    text-align: center;
+    font-size:20px;
+    color:rgb(66, 64, 64);
+    box-sizing:border-box;
+    background:rgb(240,240,240)
+}
+
+input{
+    cursor: pointer;
+}
